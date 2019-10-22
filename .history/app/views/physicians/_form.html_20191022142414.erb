@@ -23,11 +23,11 @@
 
   <h3>Offices</h3>
   <div id='offices'>
-    <%= form.fields_for :offices do |office| %>
-      <%= render 'office_fields', :f => office %>
+    <%= form.fields_for :tasks do |task| %>
+      <%= render 'task_fields', :f => task %>
     <% end %>
     <div class='links'>
-      <%= link_to_add_association 'Add an Office', form, :offices %>
+      <%= link_to_add_association 'Add Task', form, :tasks %>
     </div>
   </div>
 
