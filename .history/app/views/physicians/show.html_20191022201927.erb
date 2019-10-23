@@ -20,11 +20,11 @@
               <th>Phone</th>
           </tr>
           <% @physician.offices.each do |offices| %>
-            <tr>
-                <td><%= offices.street_address %></td>
-                <td><%= offices.zip %></td>
-                <td><%= offices.phone %></td>
-            </tr>
+          <tr>
+              <td><%= offices.street_address %></td>
+              <td><%= offices.zip %></td>
+              <td><%= offices.phone %></td>
+          </tr>
         <% end %>
     </table>
 </div>        
