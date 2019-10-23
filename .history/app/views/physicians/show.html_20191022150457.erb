@@ -28,21 +28,8 @@
         <% end %>
     </table>
 </div>        
-
-<h3>Current Appointments</h3>
-<div class="location-table">
-    <table class="blueTable">
             
-          <tr>
-              <th>Patient Name</th>
-              <th>Date of Appointment</th>
-          </tr>
-          <% @physician.appointments.each do |appointments| %>
-            <tr>
-                <td><%= appointments.patient.name %></td>
-                <td><%= appointments.visit %></td>
-            </tr> 
-          <% end %>
+            
     </table>
 </div>
 

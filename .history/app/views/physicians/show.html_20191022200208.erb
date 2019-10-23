@@ -37,12 +37,12 @@
               <th>Patient Name</th>
               <th>Date of Appointment</th>
           </tr>
-          <% @physician.appointments.each do |appointments| %>
-            <tr>
-                <td><%= appointments.patient.name %></td>
-                <td><%= appointments.visit %></td>
-            </tr> 
-          <% end %>
+          <tr>
+            <% @physician.appointments.each do |appointments| %>
+              <td><%= appointments.patient.name %></td>
+              <td><%= appointments.visit %></td>
+            <% end %>
+          </tr> 
     </table>
 </div>
 
