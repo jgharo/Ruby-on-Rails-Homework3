@@ -15,8 +15,7 @@
   <tbody>
     <% @appointments.each do |appointment| %>
       <tr>
-        <td><%= appointment.visit.strftime("%B %dth, %Y %H:%M") %></td>
-        <!--Alternative to formatting similar date format: to_formatted_s(:long_ordinal)-->
+        <td><%= appointment.visit.strftime("%B %dth, %Y %H") %></td>
         <td><%= appointment.physician.name %></td>
         <td><%= appointment.patient.name%></td>
         <td><%= link_to 'Show', appointment %></td>
